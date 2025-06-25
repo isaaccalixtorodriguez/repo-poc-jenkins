@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    triggers {
-        githubPullRequest()
-    }
-
     stages {
         stage('Validar con API') {
             steps {
@@ -28,3 +24,4 @@ pipeline {
         }
     }
 }
+
